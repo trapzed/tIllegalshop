@@ -40,6 +40,7 @@ Config.Hours = true
 -- Liste des catégories / Items du shop illégal
 Config.IllegalItem = {
     Armes = {
+        -- Pour les armes en WEAPON, uncomment les lignes en dessous, et utilises les Name = WEAPON_NOMDELARME
         --{Label = "Pistolet", Name = "WEAPON_PISTOL", Price = 4000},
         --{Label = "Mini Uzi", Name = "WEAPON_MICROSMG", Price = 12000},
         --{Label = "AK-47", Name = "WEAPON_ASSAULTRIFLE", Price = 30000},
