@@ -28,9 +28,6 @@ AddEventHandler('tIllegalshop:ShopWeapon', function(ITEM,price,labelSelected)
     local xPlayer = ESX.GetPlayerFromId(source)
     local blackMoney = xPlayer.getAccount(Config.ArgentSale)
 
-    print(price)
-    print(blackMoney.money)
-
     if blackMoney.money >= price then
 
         xPlayer.removeAccountMoney(Config.ArgentSale, price)
