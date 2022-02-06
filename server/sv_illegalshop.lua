@@ -31,12 +31,15 @@ AddEventHandler('tIllegalshop:ShopWeapon', function(ITEM,price,labelSelected)
     if blackMoney.money >= price then
 
         xPlayer.removeAccountMoney(Config.ArgentSale, price)
-        
+        --
+        -- Pour changer le nombre de munitions à l'achat, modifiez le 1 en dessous
+        --
         -- Si vos armes NE SONT PAS en ITEMS :
         -- xPlayer.addWeapon(ITEM, 1)
 
         -- Si vos armes sont en ITEMS :
         xPlayer.addInventoryItem(ITEM, 1)
+
         TriggerClientEvent(Config.Events["esx:showNotification"], source, "~r~-" .. price .."$~w~")
         TriggerClientEvent(Config.Events["esx:showNotification"], source, "~w~Vous avez reçu 1 ~g~" .. labelSelected .. "~w~ !")
 
